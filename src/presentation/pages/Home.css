@@ -1,17 +1,26 @@
 .home-container {
-  width: 100%;
-  max-width: 600px;
-  background: var(--color-card-light);
-  padding: 20px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  backdrop-filter: blur(10px);
-  margin-top: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .home-title {
-  font-size: 24px;
-  font-weight: bold;
   text-align: center;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.home-panels {
+  display: flex;
+  gap: 2rem;
+}
+
+.home-panel {
+  flex: 1;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  overflow-y: auto;
 }

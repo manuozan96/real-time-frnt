@@ -1,4 +1,5 @@
 import { Quote } from "../../domain/entities/Quote";
+import { QuoteCard } from "./QuoteCard";
 import "./QuoteList.css";
 
 interface Props {
@@ -13,10 +14,8 @@ export function QuoteList({ quotes }: Props) {
   return (
     <ul className="quote-list">
       {quotes.map((quote, index) => (
-        <li key={index} className="quote-card">
-          <h3 className="quote-client">{quote.client}</h3>
-          <p className="quote-total">Total: ${quote.total}</p>
-          <p className="quote-date">{new Date(quote.date).toLocaleString()}</p>
+        <li key={index}>
+          <QuoteCard quote={quote} />
         </li>
       ))}
     </ul>
